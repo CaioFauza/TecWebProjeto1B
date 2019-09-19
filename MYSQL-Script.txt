@@ -1,0 +1,11 @@
+SET @@global.time_zone = "+3:00"; //(+3:00 Brasil) 
+
+CREATE DATABASE IF NOT EXISTS projeto1;
+
+USE projeto1;
+
+CREATE TABLE authentication(id INT(5) PRIMARY KEY NOT NULL AUTO_INCREMENT, username VARCHAR(50) NOT NULL, password VARCHAR(50));
+
+CREATE TABLE tasks(id INT(5) NOT NULL PRIMARY KEY AUTO_INCREMENT, creator VARCHAR(50) NOT NULL, text VARCHAR(200) NOT NULL, day DATE, category VARCHAR(100));
+
+ 
